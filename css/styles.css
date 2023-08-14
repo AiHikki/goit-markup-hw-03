@@ -11,11 +11,44 @@ a {
   text-decoration: none;
   color: #434455;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+/* Header */
+.header-container {
+  padding: 24px 156px;
+  display: flex;
+}
+.navigation {
+  display: flex;
 }
 
-/* Header */
 .logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -28,17 +61,29 @@ ul {
 .logo-header {
   color: #2e2f42;
 }
-.navigation {
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 332px 0 76px;
+  gap: 40px;
+}
+
+.nav-link {
   color: #2e2f42;
   font-weight: 500;
 }
-.navigation:hover,
-.navigation:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #404bbf;
 }
 
 .contacts {
   font-style: normal;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .contacts-info:hover,
@@ -48,16 +93,22 @@ ul {
 
 /* Main content*/
 /* Section-1  */
-.hero-image {
+.hero-page {
   background-color: #2e2f42;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding: 188px 472px;
 }
 .main-title {
   color: #fff;
-  text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
+  text-align: center;
 }
 
 .order-button {
@@ -67,6 +118,11 @@ ul {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .order-button:hover,
 .order-button:focus {
@@ -74,7 +130,34 @@ ul {
 }
 
 /* Section-2 */
-.about {
+
+.features-container {
+  padding: 120px 156px;
+}
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features-list-item {
+  width: calc((100% - 72px) / 4);
+}
+.features-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+/* Section-3 */
+.our-team-page {
+  background-color: #f4f4fd;
+}
+.our-team-container {
+  padding: 120px 156px;
+}
+.about-heading {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -82,23 +165,33 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
 }
-.features {
-  color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-card-list-item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
+  padding-bottom: 32px;
 }
 
-/* Section-3 */
-.our-team {
-  background-color: #f4f4fd;
+.team-card-pic {
+  margin-bottom: 32px;
 }
-.cards {
-  background-color: #fff;
+.team-card-division {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.name {
+.name-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
@@ -106,26 +199,51 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
 }
-.occupation {
+.team-card-text {
   text-align: center;
 }
 
 /* Section-4 */
+.portfolio-container {
+  padding: 120px 156px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  width: calc((100% - 48px) / 3);
+  padding-bottom: 32px;
+}
 .card-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
-
+.card-text {
+  padding-left: 16px;
+}
 /* Footer */
+.footer-container {
+  padding: 100px 0 100px 156px;
+}
 .last-part {
   background-color: #2e2f42;
 }
 .footer-text {
+  width: 264px;
   color: #f4f4fd;
+  margin-top: 16px;
 }
+
 .logo-footer {
   color: #f4f4fd;
 }
