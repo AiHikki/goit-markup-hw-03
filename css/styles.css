@@ -10,6 +10,7 @@ body {
 a {
   text-decoration: none;
   color: #434455;
+  display: inline-block;
 }
 img {
   display: block;
@@ -72,10 +73,8 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
 }
 header .logo {
-  display: inline-block;
   margin-right: 76px;
 }
 .logo-header-color {
@@ -258,7 +257,6 @@ header .logo {
 
 footer .logo {
   margin-bottom: 16px;
-  display: inline-block;
 }
 .logo-footer-color {
   color: #f4f4fd;
