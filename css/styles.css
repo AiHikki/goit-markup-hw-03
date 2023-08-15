@@ -75,11 +75,11 @@ header .container {
   display: inline-block;
 }
 header .logo {
+  display: inline-block;
   margin-right: 76px;
 }
 .logo-header-color {
   color: #2e2f42;
-  display: inline-block;
 }
 .nav-list {
   display: flex;
@@ -261,6 +261,5 @@ footer .logo {
   display: inline-block;
 }
 .logo-footer-color {
-  display: inline-block;
   color: #f4f4fd;
 }
