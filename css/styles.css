@@ -10,7 +10,6 @@ body {
 a {
   text-decoration: none;
   color: #434455;
-  display: inline-block;
 }
 img {
   display: block;
@@ -35,8 +34,6 @@ p {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  display: flex;
-  flex-direction: column;
 }
 
 .about-heading {
@@ -73,6 +70,7 @@ header .container {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
 }
 header .logo {
   margin-right: 76px;
