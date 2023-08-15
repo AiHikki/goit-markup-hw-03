@@ -79,6 +79,7 @@ header .logo {
 }
 .logo-header-color {
   color: #2e2f42;
+  display: inline-block;
 }
 .nav-list {
   display: flex;
@@ -257,7 +258,9 @@ header .logo {
 
 footer .logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 .logo-footer-color {
+  display: inline-block;
   color: #f4f4fd;
 }
