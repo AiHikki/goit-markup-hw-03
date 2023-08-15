@@ -55,11 +55,10 @@ p {
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   padding: 24px 0;
 }
-.header-container {
+header .container {
   display: flex;
   flex-direction: row;
 }
-
 .navigation {
   display: flex;
   align-items: center;
@@ -74,6 +73,7 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  display: inline-block;
 }
 .logo-header-color {
   color: #2e2f42;
@@ -150,11 +150,7 @@ p {
 .features-page {
   padding: 120px 0;
 }
-.visually-hidden {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-}
+
 .features-list {
   display: flex;
   gap: 24px;
